@@ -1,6 +1,6 @@
 {
   "name": "lexical-env",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Simple API for manipulating lexical environments as found in Lisp, Scheme",
   "main": "index.js",
   "directories": {
