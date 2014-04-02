@@ -1,0 +1,29 @@
+{
+  "name": "lexical-env",
+  "version": "0.0.0",
+  "description": "Simple API for manipulating lexical environments as found in Lisp, Scheme",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "set -e; for t in test/*.js; do node $t; done"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:jaz303/lexical-env.git"
+  },
+  "keywords": [
+    "lexical",
+    "environment"
+  ],
+  "author": "Jason Frame <jason@onehackoranother.com> (http://jasonframe.co.uk)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaz303/lexical-env/issues"
+  },
+  "homepage": "https://github.com/jaz303/lexical-env",
+  "devDependencies": {
+    "tape": "~2.12.1"
+  }
+}
