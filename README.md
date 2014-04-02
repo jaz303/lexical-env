@@ -1,5 +1,19 @@
 # lexical-env
 
+## Installation
+
+Install with `npm`:
+
+```shell
+$ npm install lexical-env
+```
+
+Then require:
+
+```javascript
+var env = require('lexical-env');
+```
+
 ### API
 
 #### `env.create([parent])`
