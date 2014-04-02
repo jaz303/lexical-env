@@ -4,7 +4,7 @@ exports.def     = def;
 exports.get     = get;
 exports.set     = set;
 
-var hop = Object.hasOwnProperty,
+var hop = Object.prototype.hasOwnProperty,
     gpo = Object.getPrototypeOf;
 
 function create(parent) {
@@ -13,7 +13,7 @@ function create(parent) {
 
 function find(env, key) {
     while (env) {
-        if (hop(env, key)) {
+        if (hop.call(env, key)) {
             return env;
         } else {
             env = gpo(env);
@@ -23,7 +23,7 @@ function find(env, key) {
 }
 
 function def(env, key, value) {
-    if (hop(env, key)) {
+    if (hop.call(env, key)) {
         throw new Error("cannot redefine key: " + key);
     }
     env[key] = value;
