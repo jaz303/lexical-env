@@ -34,4 +34,4 @@ Finds `key` in `env` and returns the associated value. Throws an error if `key` 
 
 #### `env.set(env, key, value)`
 
-Finds `key` in `env` and sets the associated value to `value`. This operation differs from `def` in that it will update the closest environment (or parent environment) in which `key` is found, rather than introducing a new binding.
+Finds `key` in `env` and sets the associated value to `value`. This operation differs from `def` in that it will update the closest environment (or parent environment) in which `key` is found, but will never introduce a new binding.
